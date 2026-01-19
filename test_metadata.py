@@ -64,7 +64,7 @@ print("✅ 데이터 추가 완료!")
 query_text = "애플 제품 추천해줘"
 query_vec = model.encode(query_text)
 
-print(" User Question: '{query_text}'")
+print(f" User Question: '{query_text}'")
 
 # [Case 1] 필터 없이 검색
 print("[Case 1] 필터 없음 (Vector Only)")
