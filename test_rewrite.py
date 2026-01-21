@@ -26,7 +26,7 @@ def rewrite_query(history, current_query):
     2. 답변은 오직 '수정된 검색어'만 출력하세요. (설명 금지)
     """
 
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-2.5-flash')
     response = model.generate_content(prompt)
     return response.text.strip()
 
